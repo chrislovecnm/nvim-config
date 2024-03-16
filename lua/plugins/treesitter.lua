@@ -37,7 +37,7 @@ M.config = function()
 			"comment",
 			"cpp",
 			"css",
-			"dap_repl",
+		--	"dap_repl",
 			"diff",
 			"dockerfile",
 			"fish",

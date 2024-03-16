@@ -34,13 +34,13 @@ return {
 	},
 
 	-- Bookmarks
-	{
-		"MattesGroeger/vim-bookmarks",
-		config = function()
-			vim.g.bookmark_auto_save_file = vim.fn.expand("$HOME") .. "/.local/share/nvim/bookmarks"
-		end,
-		event = { "BufRead", "BufNewFile" },
-	},
+	-- {
+	-- 	"MattesGroeger/vim-bookmarks",
+	-- 	config = function()
+		-- 	vim.g.bookmark_auto_save_file = vim.fn.expand("$HOME") .. "/.local/share/nvim/bookmarks"
+		-- end,
+		-- event = { "BufRead", "BufNewFile" },
+	-- },
 
 	-- Check git history
 	{
@@ -247,11 +247,10 @@ return {
 		cmd = { "TextCaseOpenTelescope" },
 	},
 
-	-- Measure the time spent on projects
-	{
-		"wakatime/vim-wakatime",
-		event = "VeryLazy",
-	},
+	--{
+	--	"wakatime/vim-wakatime",
+	--	event = "VeryLazy",
+	--},
 
 	-- Autodetect indentation
 	{
@@ -335,5 +334,12 @@ return {
 			"CoverageSummary",
 			"CoverageToggle",
 		},
+	},
+	{
+		"stevearc/oil.nvim",
+		config = function()
+			require("oil").setup()
+		end,
+		keys = { { "-", "<cmd>Oil<cr>", mode = "n", desc = "Open parent directory" } },
 	},
 }
