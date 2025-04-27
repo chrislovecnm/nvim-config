@@ -5,7 +5,7 @@ return {
   opts = {
     dashboard = {
       preset = {
-        header = [[Hey Joe 👋!]],
+        header = [[Hey Chris 👋!]],
       },
     },
     indent = {
@@ -35,3 +35,4 @@ return {
     },
   },
 }
+
